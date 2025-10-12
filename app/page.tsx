@@ -63,11 +63,11 @@ export default function AuthorQuiz() {
         <div className="card shadow-lg" style={{ maxWidth: '1200px', width: '100%' }}>
           <div className="card-body p-5">
             <div className="text-center mb-4">
-              <h1 className="display-4 fw-bold mb-2">Author Quiz</h1>
-              <p className="text-muted">Guess who wrote this text!</p>
+              <h1 className="display-4 fw-bold mb-2">Poemario</h1>
+              <p className="text-muted">Leé el poema en voz alta, pensalo un momento, y luego intenta adivinar a su autor basado en los detalles que aparecerán</p>
               <div className="d-flex justify-content-center gap-5 mt-4">
                 <div className="text-center">
-                  <p className="text-muted small mb-1">Score</p>
+                  <p className="text-muted small mb-1">Puntuación</p>
                   <p className="h2 fw-bold text-primary mb-0">{score}/{attempts}</p>
                 </div>
                 <div className="text-center">
@@ -126,14 +126,14 @@ export default function AuthorQuiz() {
                             {isCorrect ? '✓ Correct!' : '✗ Wrong!'}
                           </p>
                           <p className="mb-0">
-                            The correct answer is: <span className="fw-bold">{currentQuote.autor} ({currentQuote.nombre})</span>
+                            La respuesta correcta es: <span className="fw-bold">{currentQuote.autor} ({currentQuote.nombre})</span>
                           </p>
                         </div>
                         <button
                           onClick={handleNext}
                           className="btn btn-primary btn-lg px-5 py-3"
                         >
-                          Next Quote
+                          Próximo Poema
                         </button>
                       </>
                     )}
@@ -144,7 +144,7 @@ export default function AuthorQuiz() {
 
             <div className="mt-5 pt-4 border-top text-center">
               <p className="text-muted small mb-0">
-                Customize the quotes and autor names in the code to match your needs!
+                Customize the quotes and autor names in the code to match your needs! (jajaj y esto??)
               </p>
             </div>
           </div>
