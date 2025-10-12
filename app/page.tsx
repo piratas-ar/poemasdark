@@ -71,7 +71,7 @@ export default function AuthorQuiz() {
                   <p className="h2 fw-bold text-primary mb-0">{score}/{attempts}</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-muted small mb-1">Accuracy</p>
+                  <p className="text-muted small mb-1">Precisión</p>
                   <p className="h2 fw-bold text-primary mb-0">
                     {attempts > 0 ? Math.round((score / attempts) * 100) : 0}%
                   </p>
@@ -85,7 +85,7 @@ export default function AuthorQuiz() {
                   onClick={getRandomQuote}
                   className="btn btn-primary btn-lg px-5 py-3"
                 >
-                  Start Quiz
+                  Empezar a leer
                 </button>
               </div>
             ) : (
@@ -123,7 +123,7 @@ export default function AuthorQuiz() {
                       <>
                         <div className={`alert ${isCorrect ? 'alert-success' : 'alert-danger'} mb-4`}>
                           <p className="fs-5 fw-semibold mb-2">
-                            {isCorrect ? '✓ Correct!' : '✗ Wrong!'}
+                            {isCorrect ? '✓ Respuesta correcta' : '✗ Respuesta equivocada!'}
                           </p>
                           <p className="mb-0">
                             La respuesta correcta es: <span className="fw-bold">{currentQuote.autor} ({currentQuote.nombre})</span>
@@ -144,7 +144,7 @@ export default function AuthorQuiz() {
 
             <div className="mt-5 pt-4 border-top text-center">
               <p className="text-muted small mb-0">
-                Customize the quotes and autor names in the code to match your needs! (jajaj y esto??)
+                Esta página esta aún muy en construcción
               </p>
             </div>
           </div>
