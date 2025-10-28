@@ -97,7 +97,7 @@ export default function AuthorQuiz() {
                 </div>
                 {!showResult && choose ? (
                   <div className="row g-3">
-                    <div className="col-6">
+                    <div className="col-md-6 col-12">
                       <button
                         onClick={() => handleGuess('Judío')}
                         className="btn btn-info btn-lg w-100 py-3"
@@ -105,7 +105,7 @@ export default function AuthorQuiz() {
                         {buildAuthorName(currentQuote)}
                       </button>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-6 col-12">
                       <button
                         onClick={() => handleGuess('Palestino')}
                         className="btn btn-secondary btn-lg w-100 py-3"
