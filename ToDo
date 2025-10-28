@@ -1,11 +1,14 @@
 Defectos:
-1. todo lo referente a la visualizacion mobile, nada encaja,  si esta muy dificil quizas se puede poner algo para forzar a la visualizacion horizontal
-2. las opciones correctas o equivocadas no se corresponden con las del archivo (sirve aca agregar opciones secundarias en cada poema en lugar de hacer se que ponga uno al azar de entre los existenes ?)
+1. todo lo referente a la visualizacion mobile, nada encaja,  si esta muy dificil quizas se puede poner algo para forzar a la visualizacion horizontal - fixed encaja mejor
+2. las opciones correctas o equivocadas no se corresponden con las del archivo (sirve aca agregar opciones secundarias en cada poema en lugar de hacer se que ponga uno al azar de entre los existenes ?) - fixed
 
 
 Mejoras
-3. sacar judio o palestino,  opcion de agregar mas poesia de otros pueblos
+3. sacar judio o palestino, hasta aca esta
+ opcion de agregar mas poesia de otros pueblos, no creo
 4. poema entero es un monton, frase muy poco: opcion de rediseño en la que para la eleccion se muestre solo una frase del poema, pero luego de hacer la eleccion tambien se pueda leer el poema entero
+ya se como hacerlo, falta hacerlo
+
 5. volver a pasar los poemas a un CSV e incluir: frase_eleccion poema, poema entero, titulo poema, autor, año, pueblo autor?, bio autor, autor incorrecto, año incorrecto, bio incorrecto
 
 6. editar algo y subirlo con vscode
