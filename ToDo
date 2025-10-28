@@ -7,3 +7,5 @@ Mejoras
 3. sacar judio o palestino,  opcion de agregar mas poesia de otros pueblos
 4. poema entero es un monton, frase muy poco: opcion de rediseño en la que para la eleccion se muestre solo una frase del poema, pero luego de hacer la eleccion tambien se pueda leer el poema entero
 5. volver a pasar los poemas a un CSV e incluir: frase_eleccion poema, poema entero, titulo poema, autor, año, pueblo autor?, bio autor, autor incorrecto, año incorrecto, bio incorrecto
+
+6. editar algo y subirlo con vscode
