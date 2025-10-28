@@ -91,6 +91,9 @@ export default function AuthorQuiz() {
             ) : (
               <div>
                 <div className="bg-light rounded p-4 mb-4 d-flex" style={{ minHeight: '150px' }}>
+                  <pre className="fs-5 fw-bold text-center mb-0">
+                    {currentQuote.titulo}
+                  </pre>
                   <pre className="fs-5 fst-italic text-left mb-0">
                     {currentQuote.texto}
                   </pre>
