@@ -11,12 +11,12 @@ const buildAuthorDescription = (quote: Quote) => {
   return <div className={`author-description ${expanded}`} onClick={() => setExpanded("expanded")}>{quote.bio.toString()}</div>
 }
 
-const GuessBtn: FunctionComponent<{ quote: any, guess: any, alt?: boolean }> = ({ quote, guess, alt = false }) => {
+const GuessBtn: FunctionComponent<{ quote: any, guess: any }> = ({ quote, guess }) => {
   return (
     <div className="col-md-6 col-12">
       <button
         onClick={guess}
-        className={`btn ${alt?'btn-info':'btn-secondary'} btn-lg w-100 py-3`}
+        className='btn btn-primary btn-lg w-100 py-3'
       >
         {buildAuthorName(quote)}
       </button>
@@ -52,7 +52,10 @@ export default function AuthorQuiz() {
     return (quotedb[randomIndex]);
   }, [quotes]);
 
-  const handleGuess = (guess: 'Judío' | 'Palestino') => {
+  const handleGuess = (guess: 'Judío' | 'Palestino', reverse = false) => {
+    if (reverse) {
+      guess = guess === 'Judío' ? 'Palestino' : 'Judío';
+    }
     if (!currentQuote) return;
     
     const correct = guess === currentQuote.autor;
@@ -117,8 +120,10 @@ export default function AuthorQuiz() {
                 </div>
                 {!showResult && choose ? (
                   <div className="row g-3">
-                    <GuessBtn quote={currentQuote} guess={() => handleGuess('Judío')}/>
-                    <GuessBtn quote={returnRandomQuote(currentQuote.autor)} guess={() => handleGuess('Palestino')} alt/>
+                    {[
+                    <GuessBtn quote={currentQuote} guess={() => handleGuess(currentQuote.autor)}/>,
+                    <GuessBtn quote={returnRandomQuote(currentQuote.autor)} guess={() => handleGuess(currentQuote.autor, true)}/>
+                    ].sort(() => 0.5 - Math.random() )}
                   </div>
                 ) : (
                   <div className="text-center">

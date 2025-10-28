@@ -9,6 +9,14 @@
     --foreground: #ededed;
   }
 }
+body .btn-primary {
+  --bs-btn-bg: #705dbb;
+  --bs-btn-border-color: var(--bs-btn-bg);
+  --bs-btn-active-bg: #906dcb;
+  --bs-btn-active-border-color: var(--bs-btn-hover-bg);
+  --bs-btn-hover-bg: #906dcb;
+  --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
+}
 
 html,
 body {
