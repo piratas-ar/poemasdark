@@ -1,5 +1,5 @@
 'use client'
-import { useCallback, useState } from 'react';
+import { FunctionComponent, useCallback, useState } from 'react';
 import { autores, Ethnicity, Quote } from '@/lib/autores'
 
 const buildAuthorName = (quote: Quote) => {
@@ -11,7 +11,7 @@ const buildAuthorDescription = (quote: Quote) => {
   return <div className={`author-description ${expanded}`} onClick={() => setExpanded("expanded")}>{quote.bio.toString()}</div>
 }
 
-const GuessBtn = ({ quote, guess, alt = false }) => {
+const GuessBtn: FunctionComponent<{ quote: any, guess: any, alt?: boolean }> = ({ quote, guess, alt = false }) => {
   return (
     <div className="col-md-6 col-12">
       <button
