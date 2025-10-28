@@ -2,6 +2,29 @@
 import { useCallback, useState } from 'react';
 import { autores, Ethnicity, Quote } from '@/lib/autores'
 
+const buildAuthorName = (quote: Quote) => {
+  return quote.nombre
+}
+
+const buildAuthorDescription = (quote: Quote) => {
+  const [ expanded, setExpanded ] = useState('')
+  return <div className={`author-description ${expanded}`} onClick={() => setExpanded("expanded")}>{quote.bio.toString()}</div>
+}
+
+const GuessBtn = ({ quote, guess, alt }) => {
+  return (
+    <div className="col-md-6 col-12">
+      <button
+        onClick={guess}
+        className={`btn ${alt?'btn-info':'btn-secondary'} btn-lg w-100 py-3`}
+      >
+        {buildAuthorName(quote)}
+      </button>
+      {buildAuthorDescription(quote)}
+    </div>
+  )
+}
+
 export default function AuthorQuiz() {
   const quotes: Quote[] = autores;
   const jewQuotes: Quote[] = autores.filter((autor) => autor.autor === 'Judío');
@@ -47,21 +70,17 @@ export default function AuthorQuiz() {
     getRandomQuote();
   };
 
-  const buildAuthorName = (quote: Quote) => {
-    return <>{quote.nombre}<br/> {quote.autor.toString()}</>
-  }
-
   return (
     <>
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
         rel="stylesheet"
       />
-      <div className="min-vh-100 d-flex align-items-center justify-content-center p-4" style={{
+      <div className="min-vh-100 d-flex align-items-center justify-content-center p-md-4 p-2" style={{
         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
       }}>
         <div className="card shadow-lg" style={{ maxWidth: '1200px', width: '100%' }}>
-          <div className="card-body p-5">
+          <div className="card-body p-md-5 p-3">
             <div className="text-center mb-4">
               <h1 className="display-4 fw-bold mb-2">Poemario</h1>
               <p className="text-muted">Leé el poema en voz alta, pensalo un momento, y luego intenta adivinar a su autor basado en los detalles que aparecerán</p>
@@ -83,36 +102,22 @@ export default function AuthorQuiz() {
               <div className="text-center">
                 <button
                   onClick={getRandomQuote}
-                  className="btn btn-primary btn-lg px-5 py-3"
+                  className="btn btn-primary btn-lg px-md-5 py-md-3 px-3 py-1"
                 >
                   Empezar a leer
                 </button>
               </div>
             ) : (
               <div>
-                <div className="bg-light rounded p-4 mb-4 d-flex" style={{ minHeight: '150px' }}>
-                  <pre className="fs-5 fst-italic text-left mb-0">
+                <div className="bg-light rounded p-md-4 p-1 mb-4 d-flex" style={{ minHeight: '150px' }}>
+                  <div className="poem-text fst-italic text-left mb-0 mx-auto" style={{ whiteSpace: "pre-line" }}>
                     {currentQuote.texto}
-                  </pre>
+                  </div>
                 </div>
                 {!showResult && choose ? (
                   <div className="row g-3">
-                    <div className="col-md-6 col-12">
-                      <button
-                        onClick={() => handleGuess('Judío')}
-                        className="btn btn-info btn-lg w-100 py-3"
-                      >
-                        {buildAuthorName(currentQuote)}
-                      </button>
-                    </div>
-                    <div className="col-md-6 col-12">
-                      <button
-                        onClick={() => handleGuess('Palestino')}
-                        className="btn btn-secondary btn-lg w-100 py-3"
-                      >
-                        {buildAuthorName(returnRandomQuote(currentQuote.autor))}
-                      </button>
-                    </div>
+                    <GuessBtn quote={currentQuote} guess={() => handleGuess('Judío')}/>
+                    <GuessBtn quote={returnRandomQuote(currentQuote.autor)} guess={() => handleGuess('Palestino')} alt/>
                   </div>
                 ) : (
                   <div className="text-center">
