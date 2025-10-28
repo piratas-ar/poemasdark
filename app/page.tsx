@@ -11,7 +11,7 @@ const buildAuthorDescription = (quote: Quote) => {
   return <div className={`author-description ${expanded}`} onClick={() => setExpanded("expanded")}>{quote.bio.toString()}</div>
 }
 
-const GuessBtn = ({ quote, guess, alt }) => {
+const GuessBtn = ({ quote, guess, alt = false }) => {
   return (
     <div className="col-md-6 col-12">
       <button
@@ -109,10 +109,11 @@ export default function AuthorQuiz() {
               </div>
             ) : (
               <div>
-                <div className="bg-light rounded p-md-4 p-1 mb-4 d-flex" style={{ minHeight: '150px' }}>
-                  <div className="poem-text fst-italic text-left mb-0 mx-auto" style={{ whiteSpace: "pre-line" }}>
-                    {currentQuote.texto}
-                  </div>
+                <div className="bg-body-secondary fs-4 fw-bold text-center rounded p-4 mb-4 d-flex" style={{ minHeight: '40px' }}>
+                  {currentQuote.titulo}
+                </div>
+                <div className="bg-light rounded p-4 mb-4 d-flex poem-text" style={{ minHeight: '150px' }}>
+                  {currentQuote.texto}
                 </div>
                 {!showResult && choose ? (
                   <div className="row g-3">
