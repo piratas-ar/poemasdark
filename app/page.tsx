@@ -86,7 +86,7 @@ export default function AuthorQuiz() {
           <div className="card-body p-md-5 p-3">
             <div className="text-center mb-4">
               <h1 className="display-4 fw-bold mb-2">Poemario</h1>
-              <p className="text-muted">Leé el poema en voz alta, pensalo un momento, y luego intenta adivinar a su autor basado en los detalles que aparecerán</p>
+              <p className="text-muted">Leé parte de un poema en voz alta, pensalo un momento, y luego intenta adivinar a su autor basado en los detalles que aparecerán.</p>
               <div className="d-flex justify-content-center gap-5 mt-4">
                 <div className="text-center">
                   <p className="text-muted small mb-1">Puntuación</p>
@@ -134,7 +134,7 @@ export default function AuthorQuiz() {
                             {isCorrect ? '✓ Respuesta correcta' : '✗ Respuesta equivocada!'}
                           </p>
                           <p className="mb-0">
-                            La respuesta correcta es: <span className="fw-bold">{currentQuote.autor} ({currentQuote.nombre})</span>
+                            La respuesta correcta es: <span className="fw-bold"> ({currentQuote.nombre})</span>
                           </p>
                         </div>
                         <p className="text-muted text-left">Este es el poema completo:</p>
