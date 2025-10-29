@@ -11,7 +11,9 @@ export interface Quote {
 
 export const autores: Quote[] = [
   // { titulo: `Ejemplo` ,texto: `poema ejemplo`, autor: `Palestino`, nombre: `josé pérez`, año: `1970 - 2002`, bio:` `   },
-  { titulo: `Fuga de muerte`,cita: `cita` ,texto: `Negra leche del alba la bebemos por la tarde
+  { titulo: `Fuga de muerte`,cita: `Grita ustedes caven más hondo en la tierra los demás canten y toquen
+empuña el fierro en el cinto lo blande sus ojos son azules
+ustedes entierren las palas más hondo los demás sigan tocando para el baile` ,texto: `Negra leche del alba la bebemos por la tarde
 la bebemos al mediodía y en la mañana la bebemos de noche
 bebemos y bebemos
 cavamos una tumba en los aires donde no hay opresión
@@ -25,7 +27,7 @@ nos ordena vamos toquen para el baile
 Negra leche del alba te bebemos de noche
 te bebemos en la mañana y al mediodía te bebemos por la tarde
 bebemos y bebemos
-Un hombre habita en la casa juega con las  serpientes escribe
+Un hombre habita en la casa juega con las serpientes escribe
 escribe cuando oscurece a Alemania tu pelo dorado Margarete
 Tu pelo cenizo Sulamith cavamos una tumba en los aires donde no hay opresión
 
@@ -59,7 +61,11 @@ tu pelo dorado Margarete
 tu pelo cenizo Sulamith`, autor: `Judío`, nombre: `Paul Celan`, bio:`
 1920-1970
 Fue un poeta de habla alemana del siglo XX. Nació en Chernivtsi del entonces reino de Rumanía en 1920 en una familia judía. Durante la segunda guerra mundial estuvo en un campo de trabajo forzado y tras escapar se estableció en París, donde murió en 1970.`, año: `1970 - 2002`   },
-  { titulo: `Recuerdos de Polonia` ,cita: `cita` ,texto: `En Varsovia, una muchacha hablaba así:
+  { titulo: `Recuerdos de Polonia` ,cita: `Si quieres acariciarme, yo no me opondría
+pero debes saber que todos estos muertos
+están en mí
+y yo toda, toda soy de ceniza.
+Bésame, pero que no te sepa amarga.` ,texto: `En Varsovia, una muchacha hablaba así:
 si quieres acariciarme, yo no me opondría;
 si quieres besarme, puedes hacerlo
 te permitiría que me desnudes los senos.
@@ -91,7 +97,10 @@ y no me compres abalorios, nunca.
  
 
  `, autor: `Judío`, nombre: `Geo Bogda`, año: `Rumanía, 1909 – Ucrania, 1993`, bio:`Fue un teórico, poeta y periodista rumano de vanguardia, conocido por sus convicciones políticas comunistas y de izquierda. De joven en el período de entreguerras, era conocido como un rebelde y era uno de los surrealistas rumanos más influyentes. Varios de sus polémicos poemas lo llevaron dos veces a ser encarcelado por obscenidad, y lo vieron participar en el conflicto entre jóvenes y viejos escritores rumanos, así como en el enfrentamiento entre la vanguardia y la extrema derecha. En una etapa posterior, Bogza ganó renombre por sus numerosos y logrados reportajes, siendo uno de los primeros en cultivar el género en la literatura rumana, y usándolo como un lugar para la crítica social. `   },
-  { titulo: `Raíz` ,cita: `cita` ,texto: `
+  { titulo: `Raíz` ,cita: `Yo era una flor. Ahora soy raíz.
+Oscura, la tierra me cubre por entero,
+Mi destino se ha cumplido.
+Sobre mi cabeza, una sierra llora.` ,texto: `
 Con fuerza se desliza la raíz, 
 bebe de la lluvia, vive bajo tierra,
 sus sueños son limpios como la nieve.
@@ -122,7 +131,7 @@ Mi destino se ha cumplido.
 Sobre mi cabeza, una sierra llora.
 `, autor: `Judío`, nombre: `Miklós Radnóti`, año: `(Budapest, 5 de mayo de 1909 - Abda, 9 de noviembre de 1944)`, bio:` Miklós Radnóti fue un poeta húngaro judío del siglo XX, considerado uno de los líricos más importantes de la primera mitad de ese siglo. Su obra, que evolucionó desde un enfoque más optimista hasta uno de profunda aprehensión, reflejó el horror y el sufrimiento del Holocausto. Fue asesinado por los nazis durante una marcha forzada en 1944, aunque el famoso "Cuaderno de Bor" con sus últimos poemas fue encontrado en su abrigo tras ser exhumado.  
  `   },
-  { titulo: `La Recherche` ,cita: `cita` ,texto: `Recuerda también las viejas y suaves tardes
+  { titulo: `La Recherche` ,cita: `y los muertos estaban vivos, y los prisioneros en sus casas` ,texto: `Recuerda también las viejas y suaves tardes
 Y sus brillantes mesas coronadas por los poetas y sus jóvenes esposas.
 ¿Dónde queda el barro del recuerdo en que te deslizas, dónde está la noche en la que los exuberantes amigos bebían alegremente el vino natal
 que brillaba en sus ojos bellísimos?.
@@ -149,7 +158,62 @@ La Muerte lo mira todo desde otra perspectiva.
 Todavía se sientan a la mesa, se esconden en la sonrisa de las mujeres.
 Y volverán a beber de nuevo en nuestras copas, los amigos aún sin sepultar en los bosques remotos, dormidos ya en pastos extraños…`, autor: `Judío`, nombre: `Miklós Radnóti`, año: `(Budapest, 5 de mayo de 1909 - Abda, 9 de noviembre de 1944)`, bio:` Miklós Radnóti fue un poeta húngaro judío del siglo XX, considerado uno de los líricos más importantes de la primera mitad de ese siglo. Su obra, que evolucionó desde un enfoque más optimista hasta uno de profunda aprehensión, reflejó el horror y el sufrimiento del Holocausto. Fue asesinado por los nazis durante una marcha forzada en 1944, aunque el famoso "Cuaderno de Bor" con sus últimos poemas fue encontrado en su abrigo tras ser exhumado.  
  `   },
-  { titulo: `El ropero vacio ` ,cita: `cita` ,texto: `El viento de setiembre repite el último pedido
+   { titulo: `La Recherche` ,cita: `Llegaron los invasores y se multiplicaron. Y se multiplicaron las arrugas alrededor de las sonrisas de sus labios y de sus ojos de las mujeres.` ,texto: `Recuerda también las viejas y suaves tardes
+Y sus brillantes mesas coronadas por los poetas y sus jóvenes esposas.
+¿Dónde queda el barro del recuerdo en que te deslizas, dónde está la noche en la que los exuberantes amigos bebían alegremente el vino natal
+que brillaba en sus ojos bellísimos?.
+
+Los versos nadaban alrededor del resplandor de las lámparas.
+Y los adjetivos verdes y brillantes se balanceaban sobre la cresta espumosa de su música, y los muertos estaban vivos, y los prisioneros en sus casas, los poemas de los viejos amigos cuyos corazones se perdieron bajo la tierra en España, Flandes y Ucrania.
+
+Algunos se lanzaron hacia el frente, apretando sus dientes contra el fuego, y lucharon porque nada pudieron hacer para evitarlo,
+mientras dormía la alarma de un mundo adormecido y sucio,
+Bajo la cubierta de la noche, recordando los viejos hogares del pasado,
+sus cuevas e islas tranquilas, alejadas de este tiempo.
+ Algunos de ellos viajaron indefensos en vagones sellados de ganado a lugares donde se quedaron aturdidos y rígidos, esperando desarmados en los helados campos de minas, otros marcharon voluntariamente y silenciosos con un arma en la mano al lugar que escogieron, donde estaba su lucha y ahora el ángel de la libertad guarda sus sueños en la noche.
+Algunos, no importa ya. ¿De dónde vienen los vinos sabios?
+Llegaron los invasores y se multiplicaron. Y se multiplicaron las arrugas alrededor de las sonrisas de sus labios y de sus ojos de las mujeres. Y se cansaron de las hadas las muchachas en medio del silencio de la guerra.
+
+Dónde está la noche, la taberna, los tres, debajo de esta mesa.
+Y quienes viven aún, dónde están cayendo ahora los que combaten.
+Mi corazón oye sus voces, mis manos se anudan a sus manos,
+su valor y sus torsos se despliegan ante mi
+-prisionero silencioso- en las terribles montañas de Serbia.
+
+Dónde está la noche. Esa noche ya nunca volverá.
+La Muerte lo mira todo desde otra perspectiva.
+Todavía se sientan a la mesa, se esconden en la sonrisa de las mujeres.
+Y volverán a beber de nuevo en nuestras copas, los amigos aún sin sepultar en los bosques remotos, dormidos ya en pastos extraños…`, autor: `Judío`, nombre: `Miklós Radnóti`, año: `(Budapest, 5 de mayo de 1909 - Abda, 9 de noviembre de 1944)`, bio:` Miklós Radnóti fue un poeta húngaro judío del siglo XX, considerado uno de los líricos más importantes de la primera mitad de ese siglo. Su obra, que evolucionó desde un enfoque más optimista hasta uno de profunda aprehensión, reflejó el horror y el sufrimiento del Holocausto. Fue asesinado por los nazis durante una marcha forzada en 1944, aunque el famoso "Cuaderno de Bor" con sus últimos poemas fue encontrado en su abrigo tras ser exhumado.  
+ `   },
+   { titulo: `La Recherche` ,cita: `Y volverán a beber de nuevo en nuestras copas, los amigos aún sin sepultar.` ,texto: `Recuerda también las viejas y suaves tardes
+Y sus brillantes mesas coronadas por los poetas y sus jóvenes esposas.
+¿Dónde queda el barro del recuerdo en que te deslizas, dónde está la noche en la que los exuberantes amigos bebían alegremente el vino natal
+que brillaba en sus ojos bellísimos?.
+
+Los versos nadaban alrededor del resplandor de las lámparas.
+Y los adjetivos verdes y brillantes se balanceaban sobre la cresta espumosa de su música, y los muertos estaban vivos, y los prisioneros en sus casas, los poemas de los viejos amigos cuyos corazones se perdieron bajo la tierra en España, Flandes y Ucrania.
+
+Algunos se lanzaron hacia el frente, apretando sus dientes contra el fuego, y lucharon porque nada pudieron hacer para evitarlo,
+mientras dormía la alarma de un mundo adormecido y sucio,
+Bajo la cubierta de la noche, recordando los viejos hogares del pasado,
+sus cuevas e islas tranquilas, alejadas de este tiempo.
+ Algunos de ellos viajaron indefensos en vagones sellados de ganado a lugares donde se quedaron aturdidos y rígidos, esperando desarmados en los helados campos de minas, otros marcharon voluntariamente y silenciosos con un arma en la mano al lugar que escogieron, donde estaba su lucha y ahora el ángel de la libertad guarda sus sueños en la noche.
+Algunos, no importa ya. ¿De dónde vienen los vinos sabios?
+Llegaron los invasores y se multiplicaron. Y se multiplicaron las arrugas alrededor de las sonrisas de sus labios y de sus ojos de las mujeres. Y se cansaron de las hadas las muchachas en medio del silencio de la guerra.
+
+Dónde está la noche, la taberna, los tres, debajo de esta mesa.
+Y quienes viven aún, dónde están cayendo ahora los que combaten.
+Mi corazón oye sus voces, mis manos se anudan a sus manos,
+su valor y sus torsos se despliegan ante mi
+-prisionero silencioso- en las terribles montañas de Serbia.
+
+Dónde está la noche. Esa noche ya nunca volverá.
+La Muerte lo mira todo desde otra perspectiva.
+Todavía se sientan a la mesa, se esconden en la sonrisa de las mujeres.
+Y volverán a beber de nuevo en nuestras copas, los amigos aún sin sepultar en los bosques remotos, dormidos ya en pastos extraños…`, autor: `Judío`, nombre: `Miklós Radnóti`, año: `(Budapest, 5 de mayo de 1909 - Abda, 9 de noviembre de 1944)`, bio:` Miklós Radnóti fue un poeta húngaro judío del siglo XX, considerado uno de los líricos más importantes de la primera mitad de ese siglo. Su obra, que evolucionó desde un enfoque más optimista hasta uno de profunda aprehensión, reflejó el horror y el sufrimiento del Holocausto. Fue asesinado por los nazis durante una marcha forzada en 1944, aunque el famoso "Cuaderno de Bor" con sus últimos poemas fue encontrado en su abrigo tras ser exhumado.  
+ `   },
+  { titulo: `El ropero vacio ` ,cita: `De los árboles caen muertas, junto con las hojas amarillas,
+las últimas palabras de mi hermano.` ,texto: `El viento de setiembre repite el último pedido
 de mi hermano Iukev:
  —Voy a esconderme, Iashek, en tu casa,
 en el ropero vacío;
@@ -164,7 +228,9 @@ las últimas palabras de mi hermano.
 Todos los roperos vacíos del mundo
 tienen ahora sus puertas abiertas de par en par,
 y esperan que mi hermano venga a beber agua y a comer pan.`, autor: `Judío`, nombre: `Reizl Zhijlinsky`, año: `   `, bio:`no se sabe de Reizl Zhijlinsky mas que era judío, vivió en Polonia, y lo sobrevivió este poema`   },
-  { titulo: `SÓLO QUIERO ESTAR EN SU SENO` ,cita: `cita` ,texto: `Sólo quiero morir en mi tierra,
+  { titulo: `SÓLO QUIERO ESTAR EN SU SENO` ,cita: `Resucitar siendo flor
+Que deshoje un niño crecido
+En mi país.` ,texto: `Sólo quiero morir en mi tierra,
 Que me entierren en ella,
 Fundirme y desvanecerme en su fertilidad
 Para resucitar siendo hierba en mi tierra,
@@ -176,7 +242,7 @@ Siendo tierra
 Hierba
 O flor`, autor: `Palestino`, nombre: `Fadwa Tuqan` , año: `(1917-2003) `, bio:`Es considerada una de las más grandes poetas árabes. En un siglo plagado de tragedias para su pueblo, la síntesis de dulzura y resistencia que caracteriza a su obra quedó grabada en el latir de los corazones del pueblo palestino, sembrando admiración y empatía en el mundo entero. Fue una de las precursoras de la prosa libre y de las grandes voces de la resistencia palestina, tan así que fue bautizada como “La madre de la poesía palestina” por nada más ni nada menos que el gran poeta Mahmúd Darwish `   },
 
-  { titulo: `A G. H. EN NUESTRA CITA` ,cita: `cita` ,texto: `Extraño amigo mío…
+  { titulo: `A G. H. EN NUESTRA CITA` ,cita: `Si asesinas serpientes no hubieran alborotado todos los caminos, cavando tumbas para mis gentes y mi pueblo.` ,texto: `Extraño amigo mío…
 Si pudiera llegarte como
 ayer. Si asesinas serpientes
 no hubieran alborotado todos los caminos, cavando tumbas para
@@ -190,7 +256,13 @@ de mi casa y mi fuerza,
 ya mismo me tendrías a tu lado.
 Amarrando a las playas de tu amor el barco de mi vida.
 Y seríamos igual que dos pichones.`, autor: `Palestino`, nombre: `Fadwa Tuqan` , año: `(1917-2003) `, bio:`Es considerada una de las más grandes poetas árabes. En un siglo plagado de tragedias para su pueblo, la síntesis de dulzura y resistencia que caracteriza a su obra quedó grabada en el latir de los corazones del pueblo palestino, sembrando admiración y empatía en el mundo entero. Fue una de las precursoras de la prosa libre y de las grandes voces de la resistencia palestina, tan así que fue bautizada como “La madre de la poesía palestina” por nada más ni nada menos que el gran poeta Mahmúd Darwish `   },
-  { titulo: `Lo que haré` ,cita: `cita` ,texto: `No voy a
+  { titulo: `Lo que haré` ,cita: `No haré estallar
+mi boca por ti. No
+odiaré por ti ni
+siquiera te odiaré. No
+voy a matar por ti. Especialmente
+no moriré
+por ti.` ,texto: `No voy a
 bailar al son de tu tambor
 de guerra. No
 prestaré mi alma ni
@@ -233,7 +305,10 @@ y resistiré y bailaré y
 persistiré y bailaré. Este latido es más fuerte que
 la muerte. Tus tambores de guerra no son
 más fuertes que mi respiración.`, autor: `Palestino`, nombre: `Suheir Hammad`, año: `(1973)`, bio:` Es una poetisa, escritora, intérprete y activista política estadounidense de origen palestino. Nació en Amán, hija de padres palestinos expulsados de Israel. Se crio en Brooklyn y Staten Island (Nueva York). Entre sus obras destacan Born Palestinian, Born Black, sobre su infancia en un barrio neoyorquino en el que era “una minoría dentro de otra minoría”, y Breaking Poems, sobre sus experiencias tras el bombardeo israelí del Líbano. Ha participado en el programa Def Poetry Jam, es ganadora de un Premio Tony y un American Book Award en 2009 por Breaking Poems. `   },
-  { titulo: `LA BALA` ,cita: `cita` ,texto: `La bala pasa justo a tu lado
+  { titulo: `LA BALA` ,cita: `La bala pasa justo a tu lado
+y sonreís por toda una vida
+de estar entregada
+al accidente y al azar.` ,texto: `La bala pasa justo a tu lado
 A la luz de su eco contás los deseos
 Estás agotada esperando—los absolvés
 y decís: tal vez haya más espera en una vida
@@ -260,7 +335,10 @@ La bala pasa justo a tu lado
 y sonreís por toda una vida
 de estar entregada
 al accidente y al azar.`, autor: `Palestino`, nombre: `Sahar Rabah`, año: `  `, bio:` Nació y vive en Gaza. Se graduó de la ahora destruida Universidad Abierta de Al-Quds con un título en inglés y ha trabajado como traductora, editora, subtituladora, redactora, profesora e intérprete independiente.`   },
-  { titulo: `DESDE QUE ME DIJERON QUE MI AMOR NO VOLVERÁ DE LA GUERRA` ,cita: `cita` ,texto: `Lo he intentado todo:
+  { titulo: `DESDE QUE ME DIJERON QUE MI AMOR NO VOLVERÁ DE LA GUERRA` ,cita: `y así de una vez por todas
+es que acepté que todos ellos
+no regresarían de la guerra,
+así como yo tampoco.` ,texto: `Lo he intentado todo:
 Dios, por ejemplo,
 me apoyé en su pecho y oré,
 y en esa alfombra, de una vez por todas,
@@ -288,13 +366,24 @@ es que acepté que todos ellos
 no regresarían de la guerra,
 así como yo tampoco.
 `, autor: `Palestino`, nombre: `MAYA ABU AL-HAYYAT`, año: `1980`, bio:`es una novelista, poeta y traductora palestina, nacida en Beirut y que vive en Jerusalén actualmente. Desde su primera publicación en 2004, Perlas de Azúcar (“Habat Min Alsukar”), ha publicado numerosas novelas y libros infantiles, así como cuatro colecciones de poesía. You can be the last leaf es una antología de poemas seleccionados y traducidos al inglés por Fady Youdah, y publicados por Milkweed Editions (Minneapolis) en 2022. `   },
-  { titulo: `sin título` ,cita: `cita` ,texto: `La noche en la ciudad es oscura,
+  { titulo: `sin título` ,cita: `La noche en la ciudad es oscura,
+excepto por el brillo de los misiles;
+silenciosa, excepto por el sonido del bombardeo;
+aterradora, excepto por la promesa
+tranquilizadora de la oración;
+negra, excepto por la luz de los mártires.` ,texto: `La noche en la ciudad es oscura,
 excepto por el brillo de los misiles;
 silenciosa, excepto por el sonido del bombardeo;
 aterradora, excepto por la promesa
 tranquilizadora de la oración;
 negra, excepto por la luz de los mártires.`, autor: `Palestino`, nombre: `Hiba Abu Nada`, año: `1991 - 2023`, bio:` Fue una poeta, novelista y educadora palestina. Su novela ىتوملل سيل نيجسكألا (El oxígeno no es para los muertos) obtuvo el segundo premio del Premio Sharjah a la Creatividad Árabe en 2017. Murió en su casa de la Franja de Gaza a causa de un ataque aéreo israelí el 20 de octubre de 2023, a los treinta y dos años. Se formó en la Universidad Islámica de Gaza, hoy destruida por el Ejército israelí, como todas las otras universidades gazatíes. Era de profesión bioquímica y nutricionista. Un día antes de su muerte escribió: Si morimos, sepan que estamos satisfechos y firmes, y digan al mundo, en nuestro nombre, que somos personas justas del lado de la verdad.`   },
-  { titulo: `TÚ` ,cita: `cita` ,texto: `¿Te acuerdas de tu primera noche en este mundo?
+  { titulo: `TÚ` ,cita: `Es tu primera noche en la tierra
+y el ambiente es festivo
+porque todos te consideramos como una ofrenda.
+Pero si repitiéramos suficientemente esta frase
+“Es tu primera noche en la tierra”
+descubriríamos que, en realidad, eres un viajero,
+alguien que acaba de llegar a un hospedaje.` ,texto: `¿Te acuerdas de tu primera noche en este mundo?
 De hecho, no es tu primera noche
 en el Cairo o en París
 en Kinshasa o en Buenos Aires.
@@ -325,7 +414,6 @@ a pesar de que nos comportamos como si fuéramos
 los propietarios del lugar.
 Como tú,
 en este mundo también nosotros somos invitados
-45
 Es el momento propicio para recordarlo
 y es tu primera noche en la tierra.
 No estabas cuando llovió esta mañana
@@ -359,7 +447,6 @@ la vista de las colinas, por ejemplo.
 Pero eso ocurrirá a su debido tiempo.
 Ahora eres frágil y estás estupefacto.
 Todavía no tienes edad.
-46
 Todo el mundo te examina.
 Es tu primera noche en la tierra
 y el ambiente es festivo
