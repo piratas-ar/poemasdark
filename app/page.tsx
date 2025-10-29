@@ -115,7 +115,7 @@ export default function AuthorQuiz() {
                 <div className="bg-body-secondary fs-4 fw-bold text-center rounded p-4 mb-4 d-flex" style={{ minHeight: '40px' }}>
                   {currentQuote.titulo}
                 </div>
-                <div className="bg-light rounded p-4 mb-4 d-flex poem-text" style={{ minHeight: '150px' }}>
+                <div className="bg-light rounded p-4 mb-4 d-flex poem-text fst-italic" style={{ minHeight: '150px' }}>
                   {currentQuote.texto}
                 </div>
                 {!showResult && choose ? (
