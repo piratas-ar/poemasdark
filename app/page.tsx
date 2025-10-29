@@ -113,7 +113,7 @@ export default function AuthorQuiz() {
             ) : (
               <div>
                 <div className="bg-light rounded p-4 mb-4 d-flex poem-text fst-italic" style={{ minHeight: '150px' }}>
-                  {currentQuote.texto}
+                  {currentQuote.cita}
                 </div>
                 {!showResult && choose ? (
                   <div className="row g-3">
@@ -137,7 +137,7 @@ export default function AuthorQuiz() {
                             La respuesta correcta es: <span className="fw-bold">{currentQuote.autor} ({currentQuote.nombre})</span>
                           </p>
                         </div>
-                        <p className="text-muted">Este es el poema completo:</p>
+                        <p className="text-muted text-left">Este es el poema completo:</p>
                         <div className="bg-body-secondary fs-4 fw-bold text-center rounded p-4 mb-4 d-flex" style={{ minHeight: '40px' }}>
                           {currentQuote.titulo}
                         </div>
